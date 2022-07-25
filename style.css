@@ -1,0 +1,153 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('./assets/fonts/roboto-v29-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./assets/fonts/roboto-v29-latin-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-700 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+    url('./assets/fonts/roboto-v29-latin-700.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./assets/fonts/roboto-v29-latin-700.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-image: url('./assets/images/photo-1590593162201-f67611a18b87.jpg'); */
+  background-image: url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1121&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+  font-family: 'Roboto', sans-serif, Arial;
+  color: black;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  padding: 1em;
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsla(195, 53%, 79%, 0.4);
+  width: clamp(300px, 80vw, 600px);
+}
+
+h1,
+h2,
+h3 {
+  background-color: hsla(208, 100%, 97%, 0.2);
+  padding: 0.025em 0.05em;
+  margin: 0.125em 0;
+}
+
+.count {
+  color: rgb(70, 40, 4);
+}
+
+main h3 {
+  color: hsl(0, 9%, 7%);
+}
+
+button {
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1em 1.5em;
+  margin: 0.25em 0;
+  border-radius: 0.5em;
+  border-style: none;
+  transition: ease-in-out 0.3s;
+}
+
+.button-wrapper1 {
+  display: flex;
+  gap: 1em;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  opacity: 0.75;
+}
+
+#increment-btn {
+  color: black;
+  background-color: hsl(29, 54%, 80%);
+}
+
+#increment-btn:hover {
+  background-color: hsl(29, 76%, 58%);
+}
+
+#save-btn {
+  color: black;
+  background-color: rgb(115, 224, 168);
+}
+
+#save-btn:hover {
+  background-color: hsl(84, 100%, 40%);
+}
+
+span {
+  color: black;
+}
+
+.last-entry,
+.total-entry,
+.previous-entry {
+  display: flex;
+  flex-direction: row;
+}
+
+.total-entry {
+  display: flex;
+  flex-direction: row;
+  color: rgb(60, 9, 131);
+}
+
+.last-entry h2 {
+  font-size: 1.5rem;
+}
+
+#total-el {
+  color: hsl(271, 76%, 30%);
+}
+
+#reset-btn {
+  background-color: darkmagenta;
+}
+
+#reset-btn:hover {
+  color: rgb(52, 30, 3);
+  background-color: rgb(240, 44, 240);
+}
