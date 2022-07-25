@@ -1,2 +1,2 @@
-# passenger-counter
- Passenger Counter app from the Scrimba JavaScript course
+# Passenger Counter
+ Passenger Counter app from the Scrimba JavaScript course with some few modifications
